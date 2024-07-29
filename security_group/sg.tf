@@ -1,5 +1,5 @@
 resource "aws_security_group" "this" {
-  count = var.create_security_group && var.security_group_name != null ? 1 : 0
+  count = var.security_group_name != null ? 1 : 0
 
   name        = var.security_group_name
   description = coalesce(var.security_group_description, "${var.security_group_name}")

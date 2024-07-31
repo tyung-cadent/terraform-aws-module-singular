@@ -13,8 +13,6 @@ variable "env" {
 ################################################################################
 variable "vpc_id" {}
 
-variable "create_security_group" {}
-
 variable "security_group_name" {}
 
 variable "security_group_description" {}
